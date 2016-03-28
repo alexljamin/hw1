@@ -6,11 +6,14 @@ module.exports = {
   module: {
     loaders: [
       {
-        loader: 'babel-loader',
+        loader: 'babel',
         query: {
-          presets: 'es2015',
+          presets: ['react','es2015'],
         },
       }
     ]
   },
+  devServer:{
+      port: 3000
+  }
 };
